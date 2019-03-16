@@ -1,0 +1,187 @@
+body {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	background-image: url("./graphics/lamborghini.jpeg");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh; 
+	width: 100vw;
+	overflow:hidden;
+}
+
+table{
+	padding: 5px; 
+	width: 100%; 
+	border: 0;
+}
+
+.menu:not(#box4){
+	background-color: rgba(30,40,50,0);
+	opacity: 1;
+	color: #00ACEC;
+	text-shadow: .5px 0px 0px #000000, .5px 0px .5px #000000; 
+	background: radial-gradient(ellipse at 50% 50%,rgba(255,255,255,.75), rgba(255,255,255,.75), rgba(255,255,255,1));
+	vertical-align: top;
+
+	}
+.header{
+	color: White;
+	font-size: 2.5em;
+	text-shadow: 2px 0px 0px #000000, 0px 0px 5px #000000; 
+}
+.header2{
+	color: #00ACEC;
+	font-size: 1.5em;
+	text-shadow: .5px 0px 0px #000000, 0px 0px 2px #000000; 
+	vertical-align: top;
+}
+
+.contact{
+	font-size:xx-small;
+	color: white;
+	text-shadow: 2px 2px 2px #000;
+	text-align: right;
+	padding-right: 2em;
+	padding-bottom:1em;
+	vertical-align: top;
+}
+.orderSum{
+	color: white;
+	vertical-align: top;
+	height: 175px;
+}
+
+.options {
+	visibility: hidden;
+} 
+
+#title{
+	background-image: url("./graphics/water.jpeg");
+	background-position: center;
+}
+
+
+#title > td:nth-child(1){
+width:317px;
+}
+#title > td:nth-child(2){
+width:1px;
+}
+#title > td:nth-child(3){
+vertical-align:bottom;
+}
+#title > td:nth-child(4){
+width:1px;
+}
+#title > td:nth-child(5){
+width:300px;
+vertical-align:bottom;
+}
+
+#links{
+vertical-align: top;
+}
+#links2{
+vertical-align: top;
+white-space: nowrap;
+}
+#summary{
+vertical-align: top;
+}
+#costsummary{ 
+text-align:right
+}
+
+#box{
+vertical-align: top;
+width:1px;  
+}
+#priceSum{
+width:100%;
+text-align:right;
+border-bottom-color: White; 
+border-bottom-width: 1px; 
+border-bottom-style: solid;"
+}
+
+#box2{
+vertical-align: top;
+
+}
+#box3{
+vertical-align: top;
+text-align: center;
+}
+#box4{
+vertical-align: top;
+background-color:white;
+	opacity: 1;
+}
+#txtFName{
+color:white;
+font-weight:bold
+}
+#txtLName{
+color:white;
+font-weight:bold
+}
+#txtEmail{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#txtAddress{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#txtCity{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#txtState{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#txtZip{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#Phone{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#Date{
+color:white;
+font-weight:bold; 
+font-size: smaller
+}
+#nowrap{
+white-space: nowrap;
+}
+
+.tblheader{
+font: 2em Verdana, arial, sans-serif;
+}
+
+#NumRinse{
+	display: none;
+}
+#NumHW{
+	display: none;
+}
+#NumRims{
+	display: none;
+}
+#NumVacuum{
+	display: none;
+}
+#NumWindows{
+	display: none;
+}
+#NumAirFresh{
+	display: none;
+}

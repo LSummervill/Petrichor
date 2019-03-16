@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Wash Order</title>
+       <meta name="author" content="EDCC" />
+       <meta name="keywords" content="final project 'Car Wash Superstore', based on wireframe" />
+       <meta name="description" content="This template is intended to be used as a base to build my PC Superstore web page." />
+       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+       <meta name="robots" content="none" />
+	   <link rel="stylesheet" href="pcStyle.css" type="text/css" />
+		<script type="text/javascript" src="cookies.js"></script>
+		<script type="text/javascript" src="library.js"></script>
+	   
+</head>
+<body>
+<table id="main">
+
+	<tr id="title">
+		<td>
+			<img src="graphics/Logo.jpeg" width="221" height="164" alt="" border="0">
+		</td>
+		<td>&nbsp;</td>
+		<td class="header">Petrichor Car Wash Scheduling</td>
+		<td>&nbsp;</td>
+		<td  class="contact">
+			222 E Walnut St.<br />
+			Edmonds, WA 98020<br />
+			425.222.1234
+		</td>
+	</tr>
+	<tr>
+		<td colspan="1">
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td id="links2" rowspan="2" class="orderSum">
+			<a href="home.html" class="orderSum">Home</a><br />
+			<a href="contact.html" class="orderSum">Contact Us</a><br />
+			<a href="order.html" class="orderSum">Order Now</a>
+		</td>
+		<td id="box" rowspan="2" style="background-color: White;"></td>
+		
+		<td id="box2" class="menu">
+			
+			<table>
+				<tr>
+					<td style="padding-left:35px;" class="header2">
+					
+						Your Current
+						<script type="text/javascript">
+							document.write(GetCookie("PCDesc"));
+						</script>
+					</td>
+					<td style="padding-right:35px;">
+						<br /><br />
+						<script type="text/javascript">
+							document.write(GetCookie("PriceSum"));
+						</script>
+					</td>
+				</tr>
+			</table>
+			
+		</td>
+		<td rowspan="2" style="background-color: White;"></td>
+		<td id="orderSum"  class="orderSum" >&nbsp;</td>
+	</tr>
+	<tr>
+		<td class="menu">
+			Customer Information <span style="font-size:x-small">(* required information)</span>
+			<form action="summary.html" method="get"  id="customerForm" onsubmit="return chForm();">
+			<table>
+				<tr>
+					<td >First Name: *</td>
+					<td><input type="text" name="txtFName" size="40" onchange="return clearThis()" /></td>
+					<td id="txtFName"></td>
+				</tr>
+				<tr>
+					<td>Last Name: *</td>
+					<td><input type="text" name="txtLName" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtLName"></td>
+				</tr>
+				<tr>
+					<td>Email: *</td>
+					<td><input type="text" name="txtEmail" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtEmail"></td>
+				</tr>
+				<tr>
+					<td>Address: *</td>
+					<td><input type="text" name="txtAddress" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtAddress"></td>
+				</tr>
+				<tr>
+					<td>Apartment Number: </td>
+					<td><input type="text" name="txtApartment" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtApartment"></td>
+				</tr>
+				<tr>
+					<td>City: *</td>
+					<td><input type="text" name="txtCity" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtCity"></td>
+				</tr>
+				<tr>
+					<td>State: *</td>
+					<td><input type="text" name="txtState" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtState"></td>
+				</tr>
+				<tr>
+					<td>ZipCode: *</td>
+					<td><input type="text" name="txtZip" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtZip"></td>
+				</tr>
+				<tr>
+					<td>Phone Number: *</td>
+					<td><input type="text" name="txtPhone" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtPhone"></td>
+				</tr>
+				<tr>
+					<td>Date Service Needed By: *</td>
+					<td><input type="text" name="txtDate" size="40"  onchange="return clearThis()" /></td>
+					<td id="txtDate"></td>
+				</tr>
+				<tr>
+					<td colspan="3"><br /><br /><input type="submit" name="cmdSubmit" value="Order Car Wash" /></td>
+				</tr>
+			</table>
+			
+			</form>
+		</td>
+
+	</tr>
+</table>
+
+		<div id="priceSum" class="orderSum">&nbsp;</div>
+</body>
+
+</html>

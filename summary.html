@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Wash Order</title>
+       <meta name="author" content="EDCC" />
+       <meta name="keywords" content="final project 'PC Superstore', based on wireframe" />
+       <meta name="description" content="This template is intended to be used as a base to build my PC Superstore web page." />
+       <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+       <meta name="robots" content="none" />
+	   <link rel="stylesheet" href="pcStyle.css" type="text/css" />
+	   <script type="text/javascript" src="library.js"></script>
+	   <script type="text/javascript" src="cookies.js"></script>
+<script type="text/javascript">
+<!--
+//<![CDATA[
+        // content of your Javascript goes here
+//]]>
+//-->
+</script> 
+<script type="text/javascript">
+ 
+ 
+</script>
+
+</head>
+<body style="color:white"  onLoad="secondPassed()">
+
+<form action="summary.html" onsubmit="return orderSummary()">
+<table>
+	<tr id="title">
+		<td>
+			<img src="graphics/Logo.jpeg" width="221" height="164" alt="" border="0">
+		</td>
+		<td>&nbsp;</td>
+		<td class="header">Petrichor Car Wash Scheduling</td>
+		<td>&nbsp;</td>
+		<td  class="contact">
+			222 E Walnut St.<br />
+			Edmonds, WA 98020<br />
+			425.222.1234
+		</td>
+	</tr>
+	<tr>
+		<td colspan="5">
+			<hr style="background-color:white" />
+		</td>
+	</tr>
+	<tr>
+		<td id="links" rowspan="1">
+			<a href="home.html" class="orderSum">Home</a><br />
+			<a href="contact.html" class="orderSum">Contact Us</a><br />
+			<a href="order.html" class="orderSum">Order Now</a>
+		</td>
+		<td style="background-color:white" rowspan="1">&nbsp;</td>
+		<td id="summary" class="menu">
+			<h2>Thank you for scheduling with Petrichor</h2>
+			<div style="padding-left:50px">
+				<p>Your order will be to you within</p><p id="countdown" class="timer" style="text-align:center;"></p>
+
+				<p>Petrichor will be contacting:</p>
+
+					<script type="text/javascript">
+					<!--
+					//<![CDATA[
+
+					document.write(GetCookie("custName") + "<br />");
+
+					//]]>
+					//-->
+					</script>
+					<p>The services you requested were:
+					<script type="text/javascript">
+
+					document.write(GetCookie("PCDesc"));
+
+
+					</script>
+					<p>The cost summary of your request is:</p>
+
+					<p id="costsummary">
+					<script type="text/javascript">
+					<!--
+					//<![CDATA[
+
+					document.write(GetCookie("PriceSum"));
+
+					//]]>
+					//-->
+					</script>
+				</p>
+			</div>
+
+		</td>
+		<td id="box" rowspan="1" style="background-color: White;"></td>
+
+	</tr>
+	
+
+</table>
+</form>
+</body>
+</html>
